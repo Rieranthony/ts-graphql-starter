@@ -3,7 +3,7 @@ import { prop } from "@typegoose/typegoose";
 import { ObjectId } from "mongodb";
 
 @ObjectType()
-export class Todo {
+export class CellCollection {
   @Field()
   readonly _id!: ObjectId;
 
@@ -17,9 +17,10 @@ export class Todo {
 
   @prop()
   @Field()
-  content!: string;
+  name!: string;
 
-  @prop({ default: false })
+  @prop()
   @Field()
-  isDone!: boolean;
+  cell_ids!: ObjectId[];
+
 }
