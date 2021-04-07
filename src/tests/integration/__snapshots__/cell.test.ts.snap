@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Todo should create a todo 1`] = `
+exports[`Cell should create a cell 1`] = `
 Object {
   "data": Object {
-    "createTodo": Object {
-      "content": "Test todo.",
+    "createCell": Object {
+      "type": "Test type",
     },
   },
   "errors": undefined,
@@ -17,11 +17,11 @@ Object {
 }
 `;
 
-exports[`Todo should get a todo 1`] = `
+exports[`Cell should get a cell 1`] = `
 Object {
   "data": Object {
-    "getTodo": Object {
-      "content": "todo 1",
+    "getCell": Object {
+      "type": "a-type",
     },
   },
   "errors": undefined,

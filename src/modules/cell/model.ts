@@ -13,6 +13,10 @@ export default class CellModel {
     return CellMongooseModel.findById(_id).lean().exec();
   }
 
+  async getManyById(_ids: ObjectId[]): Promise<Cell[] | null> {
+    return CellMongooseModel.find().where('_id').in(_ids).lean().exec();
+  }
+
   async create(data: CellInput): Promise<Cell> {
     const cell = new CellMongooseModel(data);
 

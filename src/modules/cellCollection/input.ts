@@ -9,7 +9,7 @@ export class CellCollectionInput {
   @MinLength(1)
   name!: string;
 
-  @Field()
-  cell_ids!: ObjectId[];
+  @Field((type) => [ObjectId])
+  cells!: string[];
 
 }

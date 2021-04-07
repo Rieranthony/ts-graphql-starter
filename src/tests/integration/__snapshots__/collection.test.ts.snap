@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collection should create a cell collection 1`] = `
+Object {
+  "data": Object {
+    "createCollection": Object {
+      "cells": Array [
+        Object {
+          "type": "t-type",
+        },
+        Object {
+          "type": "d-type",
+        },
+      ],
+      "name": "test collection",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Collection should get a cell collection 1`] = `
+Object {
+  "data": Object {
+    "getCollection": Object {
+      "cells": Array [
+        Object {
+          "type": "t-type",
+        },
+        Object {
+          "type": "d-type",
+        },
+      ],
+      "name": "another collection",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

@@ -13,11 +13,11 @@ import { CellInput } from "./input";
 @Service() // Dependencies injection
 @Resolver((of) => Cell)
 export default class CellResolver {
-  constructor(private readonly todoService: CellService) {}
+  constructor(private readonly cellService: CellService) {}
 
   @Query((returns) => Cell)
   async getCell(@Arg("id") id: ObjectId) {
-    const todo = await this.todoService.getById(id);
+    const todo = await this.cellService.getById(id);
 
     return todo;
   }
@@ -26,7 +26,7 @@ export default class CellResolver {
   async createCell(
     @Arg("cellData") cellData: CellInput
   ): Promise<Cell> {
-    const todo = await this.todoService.addCell(cellData);
+    const todo = await this.cellService.addCell(cellData);
     return todo;
   }
 }

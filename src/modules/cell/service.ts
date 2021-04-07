@@ -13,6 +13,10 @@ export default class CellService {
     return this.cellModel.getById(_id);
   }
 
+  public async getManyById(_ids: ObjectId[]): Promise<Cell[] | null> {
+    return this.cellModel.getManyById(_ids);
+  }
+
   public async addCell(data: CellInput): Promise<Cell> {
     const newCell = await this.cellModel.create(data);
 
