@@ -1,8 +1,12 @@
-# ts-graphql-starter
+# cell service prototype
 
-This repo is aiming to be used as a starter kit for your next GraphQL api project. The structure as been heavily inspired by the SOLID principle, you can read more about it here: https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf
+This repo is a basic cell service using the ts-graphql-starter kit.
 
-> Recommendations and pull requests are always welcome to improve this starter kit!
+The basic functionality includes creating cells and collections out of existing cells, and retrieving cells and collections by ID. Cells must exist in the database to be added to a collection.
+
+Updating and deleting cells/collections has not been included. The GraphQL schema for cells and collections is very basic (see the playground for documentation).
+
+The structure as been heavily inspired by the SOLID principle, you can read more about it here: https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf
 
 #### Technologies used
 
@@ -22,6 +26,7 @@ This repo is aiming to be used as a starter kit for your next GraphQL api projec
 │   ├── bootstrap              # Bootstrapping and loading of the API dependencies (Express, Apollo, Database, ...)
 │   ├── entities               # Used to generate typing, schemas and ORM models
 │   ├── modules                # Business logic of the app divided by domain (eg: User, Post, Todo)
+|   ├── middleware             # Type-graphql middleware, such as logging and error interception
 │   ├── tests                  # Where all our testing strategy lives
 │   ├── utils                  # Collection of utils function that we use in the project
 │   ├── config.ts              # Config of the app, sourced by environment variables
