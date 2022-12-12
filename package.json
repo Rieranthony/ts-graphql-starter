@@ -41,7 +41,7 @@
     "class-validator": "^0.12.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphql": "^15.0.0",
     "helmet": "^3.22.0",
     "mongoose": "^5.9.13",
